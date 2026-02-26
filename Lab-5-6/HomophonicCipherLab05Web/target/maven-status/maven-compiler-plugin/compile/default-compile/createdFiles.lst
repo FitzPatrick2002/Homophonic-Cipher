@@ -1,0 +1,12 @@
+mvc\controller\ProcessInput.class
+mvc\controller\HistoryManager.class
+mvc\model\TableInput.class
+mvc\model\MessageBoxParameters.class
+mvc\model\TableOutput.class
+mvc\model\UnknownPhonogramException.class
+mvc\controller\AppContextListener.class
+mvc\model\DBManager.class
+mvc\model\Model.class
+mvc\model\FrequencyPair.class
+mvc\model\HistoryRecord.class
+mvc\model\KeyParameters.class

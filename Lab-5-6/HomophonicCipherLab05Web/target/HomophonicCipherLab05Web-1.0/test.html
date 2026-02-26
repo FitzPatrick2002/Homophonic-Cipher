@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Homophonic Cipher Encoder</h1>
+        <div id="container">
+            <form action="ProcessInput" >
+                <label>Default Key:   </label>
+                <input type="checkbox" name="use-default-cipher" value="use" />
+                
+                <!-- Top bar - selection of custom cipher parameters-->
+                
+                <label>Phonograms Length:   </label>
+                <select name="phonograms-length" size="1">
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                
+                <label>Min phonograms num:   </label>
+                <select name="min-phonograms-num" size="1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                
+                <label>Max phonograms num:   </label>
+                <select name="max-phonograms-num" size="1">
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select><br>
+                
+                <label>Preserve key:   </label>
+                <input type="checkbox" name="preserve-key" value="use" /><br>
+                
+                <label>Input:    </label>
+                <input type="text" name="input-area" /><br>
+                
+                <label>Mode:   </label>
+                <select name="mode-input" size="1">
+                    <option>Encrypt</option>
+                    <option>Decrypt</option>
+                </select><br>
+                
+                <input type="submit" value="Run"/>
+            </form>
+            <br>
+            <br>
+            <br>
+            <form action="History" method="POST">
+                <input type="submit" value="View History" />
+            </form>
+            <br>
+            <br>
+            <section>
+            <h3>Information</h3>
+            
+            <p>This section contains information about how to use this application.</p>
+            
+            <ul>
+                <li><strong>Default Key: </strong>Default key is used to encode & decode strings if this checkbox is checked. Otherwise a custom key is generated.</li>
+                <li><strong>Phonogram Length: </strong>Specifies the length of a single phonogram,</li>
+                <li><strong>Min Phonograms: </strong>Minimal phongrams number assigned to a single character.</li>
+                <li><strong>Max Phonograms: </strong>Maximal number of phonograms assigned to a single character.</li>
+                <li><strong>Preserve Key: </strong>If this field is checked, the key will not be regenerated regardless of other settings.</li>
+                <li><strong>Mode: </strong> Specifies operation mode (encoding / decoding).</li>
+                <li><strong>Input: </strong>Put your phrase which you want to encode / decode in here.</li>
+                <li><strong>Run: </strong>Runs the encoding / decoding operation on string from the input field.</li>
+                <li><strong>View History: </strong>Displays the history of operations and some statistical info.</li>
+                
+            </ul>
+        </section>
+        </div>
+    </body>
+</html>
